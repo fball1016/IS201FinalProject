@@ -348,7 +348,7 @@
 
     // Function to adjust spawn rate based on score
     function adjustSpawnRate() {
-        let newInterval = Math.max(5, 100 - Math.floor(score / 50) * 10); // Reduce by 10ms every 50 points, with a minimum interval of 5ms
+        let newInterval = Math.max(5, 100 - Math.floor(score / 50) * 5); // Reduce by 5ms every 50 points, with a minimum interval of 5ms
 
         // Only update the interval if it's different to avoid unnecessary calls to setInterval
         if (newInterval !== asteroidSpawnInterval) {
